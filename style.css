@@ -1,87 +1,109 @@
-*{
-    background-color: black;
+* {
+  background-color: black;
 }
-body{
-    color: aquamarine
+body {
+  color: aquamarine;
 }
 
 button {
-    background-color: dodgerblue;
-    border: solid chartreuse;
-    font-family: "Squada One";
-    color: white;
-    border-radius: 6px;
-    padding: 8px 12px;
-    font-size: 18px;
-    cursor: pointer;
-  }
-  .placeholder {
-    background-color: black;
-    padding: auto;
-  }
-  input {
-    color: dodgerblue;
-    font-size: 1em;
-  }
-  h1 {
-    color: fuchsia;
-    text-align: center;
-    font-family: Fascinate;
-    font-size: 3.7em;
-    text-shadow: 2px 4px 4px dodgerblue;
-  }
-  h2 {
-    color: dodgerblue;
-    font-family: "Squada One", cursive;
-    font-size: 2em;
-    text-align: center;
-  }
+  background-color: dodgerblue;
+  border: solid chartreuse;
+  font-family: "Squada One";
+  color: white;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 18px;
+  cursor: pointer;
+  -webkit-appearance: button; /* Safari otherwise prevents some */
+}
+.placeholder {
+  background-color: black;
+  padding: auto;
+}
+input {
+  color: dodgerblue;
+  font-size: 1em;
+}
+h1 {
+  color: fuchsia;
+  text-align: center;
+  font-family: Fascinate;
+  font-size: 3.7em;
+  text-shadow: 2px 4px 4px dodgerblue;
+}
+h2 {
+  color: dodgerblue;
+  font-family: "Squada One", cursive;
+  font-size: 2em;
+  text-align: center;
+}
 
 .board {
-    display: grid;
-    align-content: center;
-    width: 400px;
-    height: 400px;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-    cursor: pointer;
-    position: relative;
-  }
-  .cell {
-    border-color: chartreuse;
-    border-style: solid;
-    border-spacing: 2px;
-    border-radius: 8px;
-    font-size: 5.5em;
-    font-family: "Fascinate";
-    color: red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #a00,
-  #b10,
-  #c20 {
-    border-left: none;
-  }
-  #a00,
-  #a01,
-  #a02 {
-    border-top: none;
-  }
-  #a02,
-  #b12,
-  #c22 {
-    border-right: none;
-  }
-  #c20,
-  #c21,
-  #c22 {
-    border-bottom: none;
-  }
-  .wrapper {
-    height: 450px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  display: grid;
+  align-content: center;
+  width: 400px;
+  height: 400px;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  cursor: pointer;
+  position: relative;
+}
+.cell {
+  border-color: chartreuse;
+  border-style: solid;
+  border-spacing: 2px;
+  border-radius: 8px;
+  font-size: 5.5em;
+  font-family: "Fascinate";
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#a00,
+#b10,
+#c20 {
+  border-left: none;
+}
+#a00,
+#a01,
+#a02 {
+  border-top: none;
+}
+#a02,
+#b12,
+#c22 {
+  border-right: none;
+}
+#c20,
+#c21,
+#c22 {
+  border-bottom: none;
+}
+.wrapper {
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form.form-example {
+  display: table;
+}
+
+div.form-example {
+  display: table-row;
+}
+
+label,
+input {
+  display: table-cell;
+  margin-bottom: 10px;
+}
+
+label {
+  padding-right: 10px;
+}
+.players {
+  margin: 0 auto;
+  text-align: center;
+}
