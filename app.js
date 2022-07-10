@@ -15,9 +15,9 @@ button.addEventListener("click", function (e) {
   player2.innerText = player2;
 });
 
-"#playerInput".submit(function (e) {
-  e.preventDefault();
-});
+// "#playerInput".submit(function (e) {
+//   e.preventDefault();
+// });
 // ++++++++++++++  ↓ NEW TRY ↓ ++++++++++++++
 // Maybe a current Player?
 // A game status?? 'isPlaying' or 'over'
@@ -38,56 +38,56 @@ button.addEventListener("click", function (e) {
 
 // ++++++++++++++++ ↑ NEW TRY ↑ +++++++++++++++
 
-board.addEventListener("click", function (event) {
-  // Figure out how to get the coordinates off event object (e.target.value)
-  // Use those coordinates to reference indexes in our gameState.board
-  // Set the position in our board to the current player
-});
-function renderGame() {
-  // Call this function after you've changed your state values
-  // Make references to DOM elements, and set the innerText,
-  // or innerHTML to reflect our gameState.board
-}
-function switchPlayer() {
-  // ???
-}
+//board.addEventListener("click", function (event) {
+// Figure out how to get the coordinates off event object (e.target.value)
+// Use those coordinates to reference indexes in our gameState.board
+// Set the position in our board to the current player
+//});
+//function renderGame() {
+// Call this function after you've changed your state values
+// Make references to DOM elements, and set the innerText,
+// or innerHTML to reflect our gameState.board
+//}
+//function switchPlayer() {
+// ???
+//}
 
-function checkWin() {
-  // Maybe this calls other helper functions?
-  // checkRow()
-  // checkColumn()
-  // checkDiagonals()
-}
+//function checkWin() {
+// Maybe this calls other helper functions?
+// checkRow()
+// checkColumn()
+// checkDiagonals()
+//}
 // This takes a row index
-function logARow(rowIdx) {
-  for (let i = 0; i < grid.length; i++) {
-    console.log(grid[rowIdx][i]);
-  }
-}
+//function logARow(rowIdx) {
+//for (let i = 0; i < grid.length; i++) {
+//console.log(grid[rowIdx][i]);
+//}
+//}
 
-logARow(2);
+//logARow(2);
 
 // this takes a column index
-function logAColumn(colIdx) {
-  for (let i = 0; i < grid.length; i++) {
-    console.log(grid[i][colIdx]);
-  }
-}
+//function logAColumn(colIdx) {
+// for (let i = 0; i < grid.length; i++) {
+//  console.log(grid[i][colIdx]);
+//  }
+// }
 
-logAColumn(0);
+// logAColumn(0);
 
-function logDiagDown() {
-  for (let i = 0; i < grid.length; i++) {
-    console.log(grid[i][i]);
-  }
-}
+// function logDiagDown() {
+//   for (let i = 0; i < grid.length; i++) {
+//     console.log(grid[i][i]);
+//   }
+// }
 
-logDiagDown();
+// logDiagDown();
 
-function logDiagUp() {
-  for (let i = grid.length - 1; i >= 0; i--) {
-    console.log(grid[i][i]);
-  }
-}
+// function logDiagUp() {
+//   for (let i = grid.length - 1; i >= 0; i--) {
+//     console.log(grid[i][i]);
+//   }
+// }
 
-logDiagUp();
+// logDiagUp();
