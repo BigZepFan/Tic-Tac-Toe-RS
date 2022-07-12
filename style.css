@@ -8,10 +8,10 @@ body {
 button {
   background-color: dodgerblue;
   border: solid chartreuse;
-  font-family: "Squada One";
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: white;
   border-radius: 6px;
-  padding: 8px 12px;
+  /* padding: 1px 8px; */
   font-size: 18px;
   cursor: pointer;
   -webkit-appearance: button; /* Safari otherwise prevents some */
@@ -27,6 +27,8 @@ input {
 div.input-container {
   display: flex;
   justify-content: center;
+  height: 45px;
+  margin: 0 auto;
 }
 h1 {
   color: fuchsia;
@@ -94,7 +96,7 @@ div.cell#00 {
 #c22 {
   border-bottom: none;
 }
-.wrapper {
+.wrapper{
   height: 45px;
   justify-content: center;
   margin: 0 auto;
