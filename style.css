@@ -37,6 +37,11 @@ h2 {
   font-size: 2em;
   text-align: center;
 }
+h3{
+  color: red;
+  font-family: "Squada One";  
+  font-size: large;
+}
 
 .board {
   display: grid;
@@ -104,6 +109,14 @@ label {
   padding-right: 10px;
 }
 .players {
+  flex: auto;
+  justify-content: center;
   margin: 0 auto;
   text-align: center;
+}
+.gamers {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
