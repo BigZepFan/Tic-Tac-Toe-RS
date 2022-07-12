@@ -17,40 +17,27 @@
   <header>
     <span class="Title"><h1>Tic Tac Toe</h1></span>
     <h2>Let's Play!</h2>
-    <div class="players">
-      <form class="player-input" id="playerInput">
-        <input placeholder="Player 1 Name" id="player1" />
-        <input placeholder="Player 2 Name" id="player2" />
-        <button class="button1">Submit</button>
-      </form>
-     
   </header>
 
   <body>
-  <div class="gamers">
-  <h3 id="player1">Player 1: </h3><h3 id="player2">Player 2: </h3>      
-</div>
-    <div class="wrapper">
-      <div class="board" id="board">
-        <div class="cell" id="a00"></div>
-        <!-- <Top Left -->
-        <div class="cell" id="a01"></div>
-        <!-- Top Middle -->
-        <div class="cell" id="a02"></div>
-        <!-- Top Right -->
-        <div class="cell" id="b10"></div>
-        <!-- Mid Left -->
-        <div class="cell" id="b11"></div>
-        <!-- Mid Mid -->
-        <div class="cell" id="b12"></div>
-        <!-- Mid Right -->
-        <div class="cell" id="c20"></div>
-        <!-- Bot Left -->
-        <div class="cell" id="c21"></div>
-        <!-- Bot Mid -->
-        <div class="cell" id="c22"></div>
-        <!-- Bot Right -->
-      </div>
+    <div class="input-container">
+      <input id="input" placeholder="type something here" />
+      <button id="submit-button">Submit</button>
     </div>
+    <div class="wrapper">
+      <div class="grid" id="grid"></div>
+    </div>
+
+    <!-- <div class="players">
+    <form class="player-input" id="playerInput">
+    <input placeholder="Player 1 Name" id="player1" />
+    <input placeholder="Player 2 Name" id="player2" />
+    <button class="button1" id="submit">Submit</button>
+    </form>
+
+    <div class="gamers">
+      <h3 id="player1">Player 1:</h3>
+      <h3 id="player2">Player 2:</h3>
+    </div> -->
   </body>
 </html>
