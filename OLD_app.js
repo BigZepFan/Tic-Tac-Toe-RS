@@ -15,9 +15,9 @@ button.addEventListener("click", function (e) {
   player2.innerText = player2;
 });
 
-// "#playerInput".submit(function (e) {
-//   e.preventDefault();
-// });
+"#playerInput".submit(function (e) {
+  e.preventDefault();
+});
 // ++++++++++++++  ↓ NEW TRY ↓ ++++++++++++++
 // Maybe a current Player?
 // A game status?? 'isPlaying' or 'over'

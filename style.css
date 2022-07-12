@@ -37,10 +37,11 @@ h2 {
   font-size: 2em;
   text-align: center;
 }
-h3{
+h3 {
   color: red;
-  font-family: "Squada One";  
-  font-size: large;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 18px;
 }
 
 .board {
@@ -115,7 +116,6 @@ label {
   text-align: center;
 }
 .gamers {
-  
   display: flex;
   align-items: center;
   justify-content: center;
