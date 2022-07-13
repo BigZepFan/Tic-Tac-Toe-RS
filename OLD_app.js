@@ -91,3 +91,16 @@ button.addEventListener("click", function (e) {
 // }
 
 // logDiagUp();
+let grid = document.querySelector("#grid");
+function makeGrid() {
+  for (let i = 0; i < 3; i++) {
+    for (let j = 0; j < 3; j++) {
+      let cell = document.createElement("div");
+      cell.classList.add("cell");
+      cell.id = `${i},${j}`;
+      grid.appendChild(cell);
+    }
+  }
+}
+
+makeGrid();

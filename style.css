@@ -8,13 +8,13 @@ body {
 button {
   background-color: dodgerblue;
   border: solid chartreuse;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   color: white;
   border-radius: 6px;
   /* padding: 1px 8px; */
-  font-size: 18px;
+  font-size: 16px;
   cursor: pointer;
-  -webkit-appearance: button; /* Safari otherwise prevents some */
 }
 .placeholder {
   background-color: black;
@@ -61,11 +61,12 @@ h3 {
   cursor: pointer;
   position: relative;
 }
+
 .cell {
   border-color: chartreuse;
   border-style: solid;
-  border-spacing: 2px;
-  border-radius: 8px;
+  border-spacing: 1px;
+  border-radius: 14px;
   font-size: 5.5em;
   font-family: "Fascinate";
   color: red;
@@ -73,30 +74,8 @@ h3 {
   justify-content: center;
   align-items: center;
 }
-div.cell#00 {
-  border-left: none;
-}
-#a00,
-#b10,
-#c20 {
-  border-left: none;
-}
-#a00,
-#a01,
-#a02 {
-  border-top: none;
-}
-#a02,
-#b12,
-#c22 {
-  border-right: none;
-}
-#c20,
-#c21,
-#c22 {
-  border-bottom: none;
-}
-.wrapper{
+
+.wrapper {
   height: 45px;
   justify-content: center;
   margin: 0 auto;
