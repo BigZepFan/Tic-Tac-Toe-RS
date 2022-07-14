@@ -50,8 +50,11 @@ h3 {
   font-size: 18px;
 }
 
-.grid {
+#board {
+  color: red;
   display: grid;
+  font-size: 1.1em;
+  font-family: "Fascinate";
   margin: 0 auto;
   align-content: center;
   width: 400px;
@@ -73,6 +76,9 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#a1 #d1 #g1 {
+  border-left: none;
 }
 
 .wrapper {
