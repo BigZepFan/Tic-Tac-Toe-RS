@@ -1,6 +1,6 @@
 console.log("app.js is running");
-const input = document.getElementById("input");
-const input2 = document.getElementById("input2");
+let input = document.getElementById("input");
+let input2 = document.getElementById("input2");
 let button = document.querySelector("#submit-button");
 
 console.log(button);
