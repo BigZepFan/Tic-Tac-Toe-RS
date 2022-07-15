@@ -24,7 +24,7 @@ input {
   color: dodgerblue;
   font-size: 1em;
 }
-div.input-container {
+p.input-container {
   display: flex;
   justify-content: center;
   height: 45px;
