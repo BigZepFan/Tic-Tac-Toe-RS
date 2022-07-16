@@ -15,7 +15,7 @@ button {
     "Lucida Sans", Arial, sans-serif;
   color: white;
   border-radius: 6px;
-  /* padding: 1px 8px; */
+  /* padding: 1px 2px; */
   font-size: 16px;
   cursor: pointer;
 }
@@ -45,6 +45,7 @@ h2 {
   font-family: "Squada One", cursive;
   font-size: 2em;
   text-align: center;
+  text-shadow: 1px 2px 2px fuchsia;
 }
 h3 {
   color: red;

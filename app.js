@@ -6,9 +6,8 @@ let input2 = document.getElementById("input2");
 
 let button = document.querySelector("#submit-button");
 button.addEventListener("click", function (e) {
-  const player1 = "Player 1 is  " + input.value + ", you'll be (X) and";
-  const player2 =
-    input2.value + " is Player 2, you'll be (O), so who's the best?!?";
+  const player1 = "Hey  " + input.value + ", you'll be (X) and you go first!";
+  const player2 = "Hi " + input2.value + ",  you'll be (O), so who's the best?";
 
   playerOneName.innerText = player1;
   playerTwoName.innerText = player2;
