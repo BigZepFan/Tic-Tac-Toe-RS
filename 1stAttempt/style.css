@@ -2,7 +2,10 @@
   background-color: black;
 }
 body {
-  color: aquamarine;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 18px;
+  color: red;
 }
 
 button {
@@ -103,14 +106,20 @@ input {
 label {
   padding-right: 10px;
 }
-.players {
+/* .players {
   flex: auto;
   justify-content: center;
   margin: 0 auto;
   text-align: center;
-}
+} */
 .gamers {
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 18px;
+  color: red;
 }
