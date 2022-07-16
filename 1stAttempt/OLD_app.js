@@ -105,3 +105,38 @@ function makeGrid() {
 }
 
 makeGrid();
+// 7/16/22
+
+const board = document.querySelector("#board");
+
+board.addEventListener("click", function (e) {
+  const index = e.target.id;
+  let gameState = {
+    player1: "X",
+    board: [null, null, null, null, null, null, null, null, null],
+    playerOneName: "",
+    playerTwoName: "",
+    gameState: "playing",
+  };
+
+  renderBoard();
+
+  gameState.board[index] = gameState.currentPlayer;
+  console.log(gameState.board);
+  function renderBoard() {
+    for (let i = 0; i < gameState.board.length; i++) {
+      const currDiv = document.getElementById(`${i}`);
+      currDiv.innerText = gameState.board[i];
+    }
+  }
+});
+
+function switchPlayers() {
+  if (gameState.currentPlayer === "X") {
+    gameState.currentPlayer = "O";
+  } else {
+    gameState.currentPlayer = "X";
+  }
+}
+
+switchPlayers();

@@ -10,7 +10,7 @@ body {
 
 button {
   background-color: dodgerblue;
-  border: solid chartreuse;
+  border: solid chartreuse 3px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   color: white;
@@ -22,9 +22,11 @@ button {
 .placeholder {
   background-color: black;
   padding: auto;
+  height: auto;
+  border-style: hidden;
 }
 input {
-  color: dodgerblue;
+  color: darkgoldenrod;
   font-size: 1em;
 }
 p.input-container {
@@ -54,7 +56,7 @@ h3 {
   font-size: 18px;
 }
 
-#board {
+.board {
   color: red;
   display: grid;
   font-size: 1.1em;
@@ -72,7 +74,6 @@ h3 {
 .cell {
   border-color: chartreuse;
   border-style: solid;
-  border-spacing: 1px;
   border-radius: 14px;
   font-size: 5.5em;
   font-family: "Fascinate";
@@ -80,9 +81,6 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-#a1 #d1 #g1 {
-  border-left: none;
 }
 
 .wrapper {
@@ -122,5 +120,5 @@ label {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-size: 18px;
-  color: red;
+  color: rgb(160, 30, 253);
 }
