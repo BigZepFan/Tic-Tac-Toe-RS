@@ -17,33 +17,33 @@ button.addEventListener("click", function (theplayers) {
 
 //****************** ↓ FAIL GAME ***************** */
 
-let gameState = {
-  currentPlayer: "X",
-  board: [null, null, null, null, null, null, null, null, null],
+// let gameState = {
+//   currentPlayer: "X",
+//   board: [null, null, null, null, null, null, null, null, null],
 
-  player1: "",
-  player2: "",
-  gameState: "playing",
-};
+//   player1: "",
+//   player2: "",
+//   gameState: "playing",
+// };
 
-const board = document.querySelector("#board");
+// const board = document.querySelector("#board");
 
-board.addEventListener("click", function (e) {
-  const index = +e.target.id;
-  gameState.board[index] = gameState.currentPlayer;
-  renderBoard();
-});
-function renderBoard() {
-  for (let i = 0; i < gameState.board.length; i++) {
-    const currDiv = document.getElementById(`#${i}`);
-    currDiv.innerText = gameState.board[i];
-  }
-}
-function switchPlayers() {
-  if (gameState.currentPlayer === "X") {
-    gameState.currentPlayer = "O";
-  } else {
-    gameState.currentPlayer = "X";
-  }
-}
+// board.addEventListener("click", function (e) {
+//   const index = +e.target.id;
+//   gameState.board[index] = gameState.currentPlayer;
+//   renderBoard();
+// });
+// function renderBoard() {
+//   for (let i = 0; i < gameState.board.length; i++) {
+//     const currDiv = document.getElementById(`#${i}`);
+//     currDiv.innerText = gameState.board[i];
+//   }
+// }
+// function switchPlayers() {
+//   if (gameState.currentPlayer === "X") {
+//     gameState.currentPlayer = "O";
+//   } else {
+//     gameState.currentPlayer = "X";
+//   }
+// }
 //********************************** ↑ FAIL ***************
