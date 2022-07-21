@@ -15,7 +15,7 @@ button.addEventListener("click", function (theplayers) {
   playerTwoName.innerText = player2;
 });
 
-const reloadtButton = document.querySelector("#reload");
+const reloadButton = document.querySelector("#reload");
 function reload() {
   reload = location.reload();
 }
@@ -26,16 +26,13 @@ let gameState = {
   currentPlayer: "X",
 };
 
-// Make a reference to our board
 const board = document.querySelector("#board");
 
-// Add an event listener to the board
 board.addEventListener("click", function (e) {
-  //console.log(e.target.id);
   const index = +e.target.id;
-  // console.log(typeof index);
+
   gameState.board[index] = gameState.currentPlayer;
-  // console.log(gameState.board);
+
   renderBoard();
   switchPlayer();
 });
@@ -54,3 +51,28 @@ function renderBoard() {
     currDiv.innerText = gameState.board[i];
   }
 }
+let winner = section.getElementById("scoreBoard");
+
+const player1wins = player1Won;
+const player2wins = player2Won;
+
+const winningPattern = [
+  [0, 1, 2],
+  [3, 4, 5],
+  [6, 7, 8],
+  [0, 3, 6],
+  [1, 4, 7],
+  [2, 5, 8],
+  [0, 4, 8],
+  [2, 4, 6],
+];
+// function declareWinner(){
+//   for(let i = 0; i< gameState.winningPattern.length; i++){
+//     if(gameState.currentPlayer === "X");
+//   } gameState.currentPlayer = "O"; {
+//     else{
+//       gameState.currentPlayer = "X"
+//     }
+//   }
+
+//     const declareWinner = (player1Won, Player2won)
