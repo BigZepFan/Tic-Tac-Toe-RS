@@ -14,6 +14,7 @@ button.addEventListener("click", function (theplayers) {
   playerOneName.innerText = player1;
   playerTwoName.innerText = player2;
 });
+
 const reloadtButton = document.querySelector("#reload");
 function reload() {
   reload = location.reload();
