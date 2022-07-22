@@ -19,7 +19,7 @@ const reloadButton = document.querySelector("#reload");
 function reload() {
   reload = location.reload();
 }
-// PLEASE DON'T Break ↑↓ ▲ ▼  ! "" ☻ ♥ ♦ ♣ ♠ • ◘ ○ ◙ ♂ ♀ ♪ ♫ ☼ ► ◄ ♪♫ ♥♫♪
+// PLEASE DON'T Break *******************//
 
 let gameState = {
   board: [null, null, null, null, null, null, null, null, null],
@@ -51,10 +51,6 @@ function renderBoard() {
     currDiv.innerText = gameState.board[i];
   }
 }
-let winner = section.getElementById("scoreBoard");
-
-const player1wins = player1Won;
-const player2wins = player2Won;
 
 const winningPattern = [
   [0, 1, 2],
@@ -66,13 +62,9 @@ const winningPattern = [
   [0, 4, 8],
   [2, 4, 6],
 ];
-// function declareWinner(){
-//   for(let i = 0; i< gameState.winningPattern.length; i++){
-//     if(gameState.currentPlayer === "X");
-//   } gameState.currentPlayer = "O"; {
-//     else{
-//       gameState.currentPlayer = "X"
-//     }
-//   }
+function declareWinner() {}
 
-//     const declareWinner = (player1Won, Player2won)
+//const declareWinner = (player1Won, Player2won);
+// const player1wins = player1Won;
+// const player2wins = player2Won;
+let winner = section.getElementById("scoreBoard");
