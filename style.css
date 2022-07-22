@@ -60,7 +60,9 @@ h4 {
   color: rgb(160, 30, 253);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  font-size: 18px;
+  font-size: 20px;
+  /* text-shadow: 1px 2px 2px fuchsia; */
+  /* text-decoration-color: blanchedalmond; */
 }
 .board {
   color: red;

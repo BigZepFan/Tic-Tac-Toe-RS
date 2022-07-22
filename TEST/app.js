@@ -2,9 +2,9 @@ console.log("app.js running");
 
 let input = document.getElementById("input");
 let button = document.querySelector("#submit-button");
-let grid = document.querySelector("#grid");
+const board = document.querySelector("#board");
 
-console.dir(grid);
+console.dir(board);
 // console.log(button);
 
 button.addEventListener("click", function (e) {
@@ -15,23 +15,60 @@ button.addEventListener("click", function (e) {
 // let cell = document.createElement("div");
 // cell.classList.add("cell");
 // cell.id = `1`;
-// grid.appendChild(cell);
+// board.appendChild(cell);
 
-const gridSize = 3;
+const boardSize = 3;
 
-function makeGrid() {
-  for (let i = 0; i < gridSize; i++) {
-    for (let j = 0; j < gridSize; j++) {
+function makeBoard() {
+  for (let i = 0; i < boardSize; i++) {
+    for (let j = 0; j < boardSize; j++) {
       let cell = document.createElement("div");
       cell.classList.add("cell");
       cell.id = `${i},${j}`;
-      grid.appendChild(cell);
+      board.appendChild(cell);
     }
   }
 }
 
-makeGrid();
+makeBoard();
 
-grid.addEventListener("click", function (event) {
+board.addEventListener("click", function (event) {
   console.log(event.target.id);
 });
+
+const reloadButton = document.querySelector("#reload");
+function reload() {
+  reload = location.reload();
+}
+// PLEASE DON'T Break *******************//
+
+let gameState = {
+  board: [null, null, null, null, null, null, null, null, null],
+  currentPlayer: "X",
+};
+
+//const board = document.querySelector("#board");
+
+board.addEventListener("click", function (e) {
+  const index = +e.target.id;
+
+  gameState.board[index] = gameState.currentPlayer;
+
+  renderBoard();
+  switchPlayer();
+});
+
+function switchPlayer() {
+  if (gameState.currentPlayer === "X") {
+    gameState.currentPlayer = "O";
+  } else {
+    gameState.currentPlayer = "X";
+  }
+}
+
+function renderBoard() {
+  for (let i = 0; i < gameState.board.length; i++) {
+    const currDiv = document.getElementById(`${i}`);
+    currDiv.innerText = gameState.board[i];
+  }
+}

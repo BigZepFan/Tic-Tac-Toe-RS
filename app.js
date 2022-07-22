@@ -62,7 +62,9 @@ const winningPattern = [
   [0, 4, 8],
   [2, 4, 6],
 ];
-function declareWinner() {}
+// function declareWinner() {
+//   for (let i = 0; i <  )
+// }
 
 //const declareWinner = (player1Won, Player2won);
 // const player1wins = player1Won;
