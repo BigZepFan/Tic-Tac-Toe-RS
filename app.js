@@ -15,10 +15,6 @@ button.addEventListener("click", function (theplayers) {
   playerTwoName.innerText = player2;
 });
 
-const reloadButton = document.querySelector("#reload");
-function reload() {
-  reload = location.reload();
-}
 // PLEASE DON'T Break *******************//
 
 let gameState = {
@@ -51,22 +47,35 @@ function renderBoard() {
     currDiv.innerText = gameState.board[i];
   }
 }
-
-const winningPattern = [
-  [0, 1, 2],
-  [3, 4, 5],
-  [6, 7, 8],
-  [0, 3, 6],
-  [1, 4, 7],
-  [2, 5, 8],
-  [0, 4, 8],
-  [2, 4, 6],
-];
-// function declareWinner() {
-//   for (let i = 0; i <  )
+const winner = calculateWinner(currentPlayer.board);
+// let status;
+// if (winner) {
+//   gameState = "Winner: " + winner;
+// } else {
+//   gameState = "Next player: " + (this.state.xIsNext ? "X" : "O");
 // }
+function calculateWinner(cell) {
+  const winningPattern = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8],
+    [0, 4, 8],
+    [2, 4, 6],
+  ];
+  for (let i = 0; i < winningPattern.length; i++) {
+    const [a, b, c] = winningPattern[i];
+    if (cell[a] && cell[a] === cell[b] && cell[a] === cell[c]) {
+      return cell[a];
+    }
+  }
+  return null;
+}
+//let winner = section.getElementById("scoreBoard");
 
-//const declareWinner = (player1Won, Player2won);
-// const player1wins = player1Won;
-// const player2wins = player2Won;
-let winner = section.getElementById("scoreBoard");
+const reloadButton = document.querySelector("#reload");
+function reload() {
+  reload = location.reload();
+}
