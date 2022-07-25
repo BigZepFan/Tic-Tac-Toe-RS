@@ -18,11 +18,8 @@ button.addEventListener("click", function (theplayers) {
 // PLEASE DON'T Break *******************//
 
 let gameState = {
-  board: [
-    [null, null, null],
-    [null, null, null],
-    [null, null, null],
-  ],
+  board: [null, null, null, null, null, null, null, null, null],
+
   currentPlayer: "X",
 };
 
