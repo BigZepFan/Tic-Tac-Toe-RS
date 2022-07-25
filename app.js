@@ -49,12 +49,7 @@ function renderBoard() {
   }
 }
 const winner = calculateWinner(currentPlayer.board);
-// let status;
-// if (winner) {
-//   gameState = "Winner: " + winner;
-// } else {
-//   gameState = "Next player: " + (this.state.xIsNext ? "X" : "O");
-// }
+
 function calculateWinner(cell) {
   const winningPattern = [
     [0, 1, 2],
