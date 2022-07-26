@@ -69,6 +69,9 @@ function calculateWinner(cell) {
   }
   return null;
 }
+// calculateWinner.addEventListener("currentPlayer" function (win){
+//   const currentPlayer.innerText
+// })
 //let winner = section.getElementById("scoreBoard");
 
 const reloadButton = document.querySelector("#reload");
